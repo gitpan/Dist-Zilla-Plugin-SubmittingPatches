@@ -12,7 +12,7 @@ use warnings;
 
 package Dist::Zilla::Plugin::SubmittingPatches;
 BEGIN {
-  $Dist::Zilla::Plugin::SubmittingPatches::VERSION = '0.02';
+  $Dist::Zilla::Plugin::SubmittingPatches::VERSION = '0.03';
 }
 use Moose;
 use namespace::autoclean;
@@ -46,7 +46,7 @@ Dist::Zilla::Plugin::SubmittingPatches - Add SubmittingPatches documentation
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -66,13 +66,11 @@ Please report any bugs or feature requests on
 L<http://github.com/xenoterracide/Dist-Zilla-Plugin-SubmittingPatches/issues>
 as I'm not fond of RT.
 
-=head1 SUBMITTING PATCHES
+=head1 PATCHES
 
 Please read the SubmittingPatches file included with this Distribution. Patches
 that are of sufficient quality, within the goals of the project and pass the
 checklist will probably be accepted.
-
-=head1 TEXT OF SubmittingPatches BELOW
 
 =head1 AUTHOR
 
@@ -86,11 +84,15 @@ This is free software, licensed under:
 
   The Artistic License 2.0
 
+=head1 SubmittingPatches Doc Below
+
+---------------------------------------------------------------------
+
 =cut
 
 
 __DATA__
-__[ SubmittingPatches.pod ]__
+__[ docs/SubmittingPatches.pod ]__
 =pod
 
 =head1 Checklist
@@ -269,8 +271,8 @@ that starts with '-----BEGIN PGP SIGNED MESSAGE-----'.  That is
 not a text/plain, it's something else.
 
 Unless your patch is a very trivial and an obviously correct one,
-first send it with "To:" set to the mailing list, with "cc:" listing
-people who are involved in the area you are touching (the output from
+first send it with "To:" set to the RT email (or mailing list), with "cc:"
+listing people who are involved in the area you are touching (the output from
 "git blame $path" and "git shortlog --no-merges $path" would help to
 identify them), to solicit comments and reviews.  After the list
 reached a consensus that it is a good idea to apply the patch, re-send
